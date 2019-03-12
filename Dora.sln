@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0C6310AA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.UnitTests", "Source\Dora.UnitTests\Dora.UnitTests.csproj", "{8BA7246E-A867-43D8-89F6-208D04C8B325}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Autofac", "Source\Dora.Autofac\Dora.Autofac.csproj", "{D596AB8B-66E8-4A1F-98A5-AA7A5E7795DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{8BA7246E-A867-43D8-89F6-208D04C8B325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA7246E-A867-43D8-89F6-208D04C8B325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA7246E-A867-43D8-89F6-208D04C8B325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D596AB8B-66E8-4A1F-98A5-AA7A5E7795DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D596AB8B-66E8-4A1F-98A5-AA7A5E7795DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D596AB8B-66E8-4A1F-98A5-AA7A5E7795DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D596AB8B-66E8-4A1F-98A5-AA7A5E7795DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{57FCBF20-39A0-4C07-A48A-12800B228107} = {3A79D9CC-4FCC-4606-B057-A5E2560C28A9}
 		{836025D5-A6FF-4CDE-9373-7016A2312196} = {0CF509F9-0459-4312-A537-63BE66A1ACA2}
 		{8BA7246E-A867-43D8-89F6-208D04C8B325} = {0C6310AA-E317-4C3D-94BF-65CEE2109BB6}
+		{D596AB8B-66E8-4A1F-98A5-AA7A5E7795DC} = {0CF509F9-0459-4312-A537-63BE66A1ACA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA8C1A7F-DCFB-4048-B59B-F2A401748E39}

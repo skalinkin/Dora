@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommandLine;
+﻿using CommandLine;
 
 namespace Avtec.DevMorningFix.Dora.ConsoleApp
 {
-    [Verb("show",HelpText = "Shows name and detail of a Fundamental")]
-    class ShowOption
+    [Verb("show", HelpText = "Shows name and detail of a Fundamental")]
+    internal class ShowOption
     {
-        [Value(0)]
-        public string FundamentalName { get; set; }
+        [Value(0)] public string FundamentalName { get; set; }
     }
 }
