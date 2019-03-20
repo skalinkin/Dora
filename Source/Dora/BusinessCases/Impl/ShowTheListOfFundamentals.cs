@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Avtec.DevMorningFix.Dora.BusinessCases
+namespace Avtec.DevMorningFix.Dora.BusinessCases.Impl
 {
     public class ShowTheListOfFundamentals : IShowTheListOfFundamentals
     {

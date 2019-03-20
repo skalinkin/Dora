@@ -2,6 +2,7 @@
 using System.Reflection;
 using Autofac;
 using Autofac.Core;
+using Avtec.DevMorningFix.Dora.StrategyPatternDemo;
 using Module = Autofac.Module;
 
 namespace Avtec.DevMorningFix.Dora.Autofac
@@ -13,6 +14,9 @@ namespace Avtec.DevMorningFix.Dora.Autofac
         {
             var assembly = Assembly.GetAssembly(typeof(IStart));
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces();
+
+            builder.RegisterType<AnalogRadio>().As<Radio>();
+            builder.RegisterType<ConventionalRadio>().As<Radio>();
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Avtec.DevMorningFix.Dora.ConsoleApp
+namespace Avtec.DevMorningFix.Dora.ConsoleApp.Show
 {
-    internal class ShowCommand : IShowCommand
+    internal class ShowCommand : ICommand
     {
         private readonly IShowTheListOfFundamentals _businessCase;
         private readonly IFundamentalFormatter _formatter;
@@ -12,7 +12,7 @@ namespace Avtec.DevMorningFix.Dora.ConsoleApp
             _businessCase = businessCase;
             _formatter = formatter;
         }
-        public void Execute(ShowOption showOption)
+        public void Execute(object showOption)
         {
            _businessCase.Execute();
            foreach (var fundamental in _businessCase.Result)

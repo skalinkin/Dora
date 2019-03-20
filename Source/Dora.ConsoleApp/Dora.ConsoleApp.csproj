@@ -54,13 +54,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleAppModule.cs" />
+    <Compile Include="Demo\ConsoleReceiver.cs" />
+    <Compile Include="Demo\Demos.cs" />
+    <Compile Include="Demo\DemoCommand.cs" />
     <Compile Include="DoraArgumentsProcessor.cs" />
-    <Compile Include="DoraStart.cs" />
-    <Compile Include="IShowCommand.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="IOption.cs" />
+    <Compile Include="IVerbsLocator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShowCommand.cs" />
-    <Compile Include="ShowOption.cs" />
+    <Compile Include="Show\ShowCommand.cs" />
+    <Compile Include="Demo\DemoOption.cs" />
+    <Compile Include="Show\ShowOption.cs" />
+    <Compile Include="VerbsLocator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
