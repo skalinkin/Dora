@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Diagnostics;
@@ -23,10 +24,10 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             var entryAssembly = Assembly.GetEntryAssembly();
             var assemblyCatalog = new AssemblyCatalog(entryAssembly);
             catalog.Catalogs.Add(assemblyCatalog);
-            Debug.Print($"Added assebly composition catalog for assembly: {entryAssembly.Location}");
+            Debug.Print($"Added assembly composition catalog for assembly: {entryAssembly.Location}");
             var location = Assembly.GetExecutingAssembly().Location;
             var path = Path.GetDirectoryName(location);
-            var directoryCatalog = new DirectoryCatalog(path);
+            var directoryCatalog = new DirectoryCatalog(path ?? throw new InvalidOperationException());
             catalog.Catalogs.Add(directoryCatalog);
             Debug.Print($"Added directory composition catalog for path: {path}");
             _compositionContainer = new CompositionContainer(catalog);
