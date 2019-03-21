@@ -1,6 +1,6 @@
 ﻿namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
 {
-    internal class PeaseRadio : Radio
+    internal class PeaseRadio : AnalogRadio
     {
         public override void Transmit(ITransmitReceiver output)
         {
