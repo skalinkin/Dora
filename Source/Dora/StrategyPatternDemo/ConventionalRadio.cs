@@ -1,6 +1,6 @@
 ﻿namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
 {
-    public class ConventionalRadio : Radio
+    internal class ConventionalRadio : Radio
     {
         public override void Transmit(ITransmitReceiver output)
         {
