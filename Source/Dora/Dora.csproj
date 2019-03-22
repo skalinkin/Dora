@@ -60,6 +60,7 @@
     <Compile Include="StrategyPatternDemo\ConventionalRadio.cs" />
     <Compile Include="StrategyPatternDemo\ITransmitReceiver.cs" />
     <Compile Include="StrategyPatternDemo\Radio.cs" />
+    <Compile Include="StrategyPatternDemo\SimplexRadio.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
