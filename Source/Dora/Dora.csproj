@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StrategyPatternDemo\AnalogRadio.cs" />
     <Compile Include="StrategyPatternDemo\OruamKcinRadio.cs" />
+    <Compile Include="StrategyPatternDemo\RussianRadio.cs" />
     <Compile Include="StrategyPatternDemo\PeaseRadio.cs" />
     <Compile Include="StrategyPatternDemo\ConventionalRadio.cs" />
     <Compile Include="StrategyPatternDemo\ITransmitReceiver.cs" />
