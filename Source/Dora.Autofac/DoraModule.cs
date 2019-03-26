@@ -20,6 +20,7 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             builder.RegisterType<PeaseRadio>().As<Radio>();
             builder.RegisterType<SimplexRadio>().As<Radio>();
             builder.RegisterType<OruamKcinRadio>().As<Radio>();
+            builder.RegisterType<RussianRadio>().As<Radio>();
         }
     }
 }
