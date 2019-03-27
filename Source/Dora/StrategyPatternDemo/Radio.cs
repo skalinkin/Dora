@@ -4,7 +4,7 @@
     {
         public virtual void Transmit(ITransmitReceiver output)
         {
-            output.TransmitData("I am just a radio");
+            output.TransmitData("Transmitting.");
         }
     }
 }

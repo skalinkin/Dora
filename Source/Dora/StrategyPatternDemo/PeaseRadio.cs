@@ -2,9 +2,5 @@
 {
     internal class PeaseRadio : AnalogRadio
     {
-        public override void Transmit(ITransmitReceiver output)
-        {
-            output.TransmitData("Pease Pourage Hot, Pease  pourage cold");
-        }
     }
 }
