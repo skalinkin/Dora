@@ -64,6 +64,8 @@
     <Compile Include="StrategyPatternDemo\Radio.cs" />
     <Compile Include="StrategyPatternDemo\SimplexRadio.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="StrategyPatternDemo\StrategyPatternDemo.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
