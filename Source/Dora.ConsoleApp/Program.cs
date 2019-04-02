@@ -12,6 +12,7 @@ namespace Avtec.DevMorningFix.Dora.ConsoleApp
             applicationConstructor.BuildComposition();
             var start = applicationConstructor.GetStart();
             start.Execute(args);
+            Console.ReadLine();
         }
 
         private static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs e)

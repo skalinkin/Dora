@@ -2,5 +2,9 @@
 {
     internal class ConventionalRadio : Radio
     {
+        internal override void InternalTransmitData(ITransmitReceiver output)
+        {
+            output.TransmitData("-");
+        }
     }
 }

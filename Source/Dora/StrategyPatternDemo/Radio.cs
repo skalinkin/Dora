@@ -2,9 +2,13 @@
 {
     public abstract class Radio
     {
-        public virtual void Transmit(ITransmitReceiver output)
+        public void Transmit(ITransmitReceiver output)
         {
-            output.TransmitData("Transmitting.");
+            output.TransmitData("Begin Tramsmitting");
+            InternalTransmitData(output);
+            output.TransmitData("End Transmitting");
         }
+
+        internal abstract void InternalTransmitData(ITransmitReceiver output);
     }
 }
