@@ -21,6 +21,9 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             builder.RegisterType<SimplexRadio>().As<Radio>();
             builder.RegisterType<OruamKcinRadio>().As<Radio>();
             builder.RegisterType<RussianRadio>().As<Radio>();
+            builder.RegisterType<BrokenLspRadio>().As<Radio>();
+            builder.RegisterType<MoscowRadio>().As<Radio>();
+
         }
     }
 }
