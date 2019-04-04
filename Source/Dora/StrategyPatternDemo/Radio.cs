@@ -2,22 +2,14 @@
 {
     public abstract class Radio
     {
+        protected ITransmitBehavior _transmitBehavior;
+        public Radio(ITransmitBehavior transmitBehavio)
+        {
+            _transmitBehavior = transmitBehavio;
+        }
         public void Transmit(ITransmitReceiver output)
         {
-            output.TransmitData("Begin Tramsmitting");
-            output.TransmitData($"Name:{GetType().Name}");
-            InternalTransmitData(output);
-            output.TransmitData("End Transmitting");
-            if(this.GetType() != typeof(MoscowRadio))
-            {
-                output.TransmitData(".");
-            }
-            if(this.GetType() != typeof(RussianRadio))
-            {
-                output.TransmitData(".");
-            }
+            _transmitBehavior.Transmit(output);
         }
-
-        internal abstract void InternalTransmitData(ITransmitReceiver output);
     }
 }

@@ -2,9 +2,8 @@
 {
     internal class AnalogRadio : Radio
     {
-        internal override void InternalTransmitData(ITransmitReceiver output)
+        public AnalogRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
         {
-            output.TransmitData("+");
-        }
+        } 
     }
 }

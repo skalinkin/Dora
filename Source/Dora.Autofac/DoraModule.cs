@@ -15,6 +15,7 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             var assembly = Assembly.GetAssembly(typeof(IStart));
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces();
 
+            builder.RegisterType<DefaultTransmitBehavior>().As<ITransmitBehavior>();
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();
             builder.RegisterType<PeaseRadio>().As<Radio>();

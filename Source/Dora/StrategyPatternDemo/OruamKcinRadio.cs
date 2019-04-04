@@ -2,12 +2,8 @@
 {
     internal class OruamKcinRadio : ConventionalRadio
     {
-        public new void Transmit(ITransmitReceiver output) {
-            output.TransmitData("+");
-            base.Transmit(output);
-        }
-        internal override void InternalTransmitData(ITransmitReceiver output)
+        public OruamKcinRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
         {
-        }
+        } 
     }
 }

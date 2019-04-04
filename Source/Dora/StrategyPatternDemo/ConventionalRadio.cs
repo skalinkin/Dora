@@ -2,9 +2,8 @@
 {
     internal class ConventionalRadio : Radio
     {
-        internal override void InternalTransmitData(ITransmitReceiver output)
+        public ConventionalRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
         {
-            output.TransmitData("-");
-        }
+        } 
     }
 }

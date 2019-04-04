@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
 {
-    class MoscowRadio:RussianRadio
+    public interface ITransmitBehavior
     {
-        public MoscowRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
-        {
-        } 
+        void Transmit(ITransmitReceiver output);
     }
 }
