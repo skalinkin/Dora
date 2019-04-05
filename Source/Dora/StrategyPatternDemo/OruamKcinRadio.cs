@@ -2,8 +2,8 @@
 {
     internal class OruamKcinRadio : ConventionalRadio
     {
-        public OruamKcinRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
+        public OruamKcinRadio(ITransmitBehavior transmitBehavior) : base(transmitBehavior)
         {
-        } 
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Avtec.DevMorningFix.Dora.Fundamentals
 {
-    class MinimalComplexity : IAvtecEngineeringFundamental
+    internal class MinimalComplexity : IAvtecEngineeringFundamental
     {
         public string GetName()
         {

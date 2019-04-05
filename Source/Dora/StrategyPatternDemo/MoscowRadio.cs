@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
+﻿namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
 {
-    class MoscowRadio:RussianRadio
+    internal class MoscowRadio : RussianRadio
     {
-        public MoscowRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
+        public MoscowRadio(ITransmitBehavior transmitBehavior) : base(transmitBehavior)
         {
-        } 
+        }
     }
 }

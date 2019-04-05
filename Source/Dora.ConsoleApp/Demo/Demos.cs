@@ -2,6 +2,7 @@
 {
     internal enum Demos
     {
-        Strategy, Observer
+        Strategy,
+        Observer
     }
 }

@@ -4,7 +4,7 @@ namespace Avtec.DevMorningFix.Dora
 {
     public interface IShowTheListOfFundamentals
     {
-        void Execute();
         IEnumerable<IAvtecEngineeringFundamental> Result { get; }
+        void Execute();
     }
 }

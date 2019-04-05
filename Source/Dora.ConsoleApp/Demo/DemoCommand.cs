@@ -12,6 +12,7 @@ namespace Avtec.DevMorningFix.Dora.ConsoleApp.Demo
         {
             _strategyDemoFactory = strategyDemoFactory;
         }
+
         public void Execute(object option)
         {
             var demoOption = (DemoOption) option;

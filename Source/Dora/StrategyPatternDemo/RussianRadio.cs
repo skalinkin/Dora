@@ -2,8 +2,8 @@
 {
     internal class RussianRadio : PeaseRadio
     {
-        public RussianRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
+        public RussianRadio(ITransmitBehavior transmitBehavior) : base(transmitBehavior)
         {
-        } 
+        }
     }
 }

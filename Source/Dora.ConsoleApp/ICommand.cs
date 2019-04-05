@@ -1,6 +1,4 @@
-﻿using Avtec.DevMorningFix.Dora.ConsoleApp.Demo;
-
-namespace Avtec.DevMorningFix.Dora.ConsoleApp
+﻿namespace Avtec.DevMorningFix.Dora.ConsoleApp
 {
     public interface ICommand
     {

@@ -59,7 +59,6 @@
     <Compile Include="StrategyPatternDemo\BrokenLspRadio.cs" />
     <Compile Include="StrategyPatternDemo\DefaultTransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\DotTransmitBehavior.cs" />
-    <Compile Include="StrategyPatternDemo\IDotTransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\ITransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\MoscowRadio.cs" />
     <Compile Include="StrategyPatternDemo\OruamKcinRadio.cs" />

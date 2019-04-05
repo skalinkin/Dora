@@ -12,14 +12,15 @@ namespace Avtec.DevMorningFix.Dora.ConsoleApp.Show
             _businessCase = businessCase;
             _formatter = formatter;
         }
+
         public void Execute(object showOption)
         {
-           _businessCase.Execute();
-           foreach (var fundamental in _businessCase.Result)
-           {
-               var text = _formatter.GetFormattedString(fundamental);
-               Console.WriteLine(text);
-           }
+            _businessCase.Execute();
+            foreach (var fundamental in _businessCase.Result)
+            {
+                var text = _formatter.GetFormattedString(fundamental);
+                Console.WriteLine(text);
+            }
         }
     }
 }

@@ -2,14 +2,16 @@
 {
     public abstract class Radio
     {
-        protected ITransmitBehavior _transmitBehavior;
-        public Radio(ITransmitBehavior transmitBehavio)
+        protected ITransmitBehavior TransmitBehavior;
+
+        protected Radio(ITransmitBehavior transmitBehavior)
         {
-            _transmitBehavior = transmitBehavio;
+            TransmitBehavior = transmitBehavior;
         }
+
         public void Transmit(ITransmitReceiver output)
         {
-            _transmitBehavior.Transmit(output);
+            TransmitBehavior.Transmit(output);
         }
     }
 }

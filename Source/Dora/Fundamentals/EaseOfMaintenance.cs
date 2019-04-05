@@ -1,6 +1,6 @@
 ﻿namespace Avtec.DevMorningFix.Dora.Fundamentals
 {
-    class EaseOfMaintenance : IAvtecEngineeringFundamental
+    internal class EaseOfMaintenance : IAvtecEngineeringFundamental
     {
         public string GetName()
         {

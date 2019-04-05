@@ -2,8 +2,8 @@
 {
     internal class SimplexRadio : ConventionalRadio
     {
-        public SimplexRadio(ITransmitBehavior transmitBehavior) :base(transmitBehavior)
+        public SimplexRadio(ITransmitBehavior transmitBehavior) : base(transmitBehavior)
         {
-        } 
+        }
     }
 }

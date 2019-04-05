@@ -15,8 +15,8 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             var assembly = Assembly.GetAssembly(typeof(IStart));
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces();
 
+            builder.RegisterType<DotTransmitBehavior>().AsSelf();
             builder.RegisterType<DefaultTransmitBehavior>().As<ITransmitBehavior>();
-            builder.RegisterType<DotTransmitBehavior>().As<ITransmitBehavior>();
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();
             builder.RegisterType<PeaseRadio>().As<Radio>();
@@ -24,8 +24,10 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             builder.RegisterType<OruamKcinRadio>().As<Radio>();
             builder.RegisterType<RussianRadio>().As<Radio>();
             builder.RegisterType<BrokenLspRadio>().As<Radio>();
-            builder.RegisterType<MoscowRadio>().As<Radio>();
-
+            builder.RegisterType<MoscowRadio>().WithParameter(
+                new ResolvedParameter(
+                    (pi, ctx) => pi.ParameterType == typeof(ITransmitBehavior),
+                    (pi, ctx) => ctx.Resolve<DotTransmitBehavior>())).As<Radio>();
         }
     }
 }

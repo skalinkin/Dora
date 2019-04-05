@@ -1,6 +1,6 @@
 ﻿namespace Avtec.DevMorningFix.Dora.Fundamentals
 {
-    class LooseCoupling : IAvtecEngineeringFundamental
+    internal class LooseCoupling : IAvtecEngineeringFundamental
     {
         public string GetName()
         {
