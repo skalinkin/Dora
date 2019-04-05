@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
 {
-    class DefaultTransmitBehavior : ITransmitBehavior
+    class DotTransmitBehavior : IDotTransmitBehavior
     {
         public void Transmit(ITransmitReceiver output)
         {
             output.TransmitData("Begin Tramsmitting");
             output.TransmitData($"Name:{GetType().Name}");
             output.TransmitData("End Transmitting");
-            output.TransmitData("..");
+            output.TransmitData(".");
         }
     }
 }
