@@ -62,12 +62,13 @@
     <Compile Include="StrategyPatternDemo\ITransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\MoscowRadio.cs" />
     <Compile Include="StrategyPatternDemo\OruamKcinRadio.cs" />
+    <Compile Include="StrategyPatternDemo\RGBTransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\RussianRadio.cs" />
     <Compile Include="StrategyPatternDemo\PeaseRadio.cs" />
     <Compile Include="StrategyPatternDemo\ConventionalRadio.cs" />
     <Compile Include="StrategyPatternDemo\ITransmitReceiver.cs" />
     <Compile Include="StrategyPatternDemo\Radio.cs" />
-    <Compile Include="StrategyPatternDemo\SimplexRadio.cs" />
+    <Compile Include="StrategyPatternDemo\IrmoRadio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StrategyPatternDemo\StrategyPatternDemo.cd" />
