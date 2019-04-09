@@ -6,7 +6,6 @@
         {
             output.TransmitData("Begin Transmitting");
             output.TransmitData("End Transmitting");
-            output.TransmitData("..");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
 {
-    public abstract class Radio
+    public class Radio
     {
         protected ITransmitBehavior TransmitBehavior;
 
