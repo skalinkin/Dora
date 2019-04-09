@@ -21,7 +21,6 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();
             builder.RegisterType<PeaseRadio>().As<Radio>();
-            //builder.RegisterType<IrmoRadio>().As<Radio>();
 
             builder.RegisterType<IrmoRadio>().WithParameter(
                 new ResolvedParameter(
