@@ -17,11 +17,8 @@ namespace Avtec.DevMorningFix.Dora.Autofac
 
             builder.RegisterType<DotTransmitBehavior>().AsSelf();
             builder.RegisterType<RGBTransmitBehavior>().AsSelf();
-<<<<<<< HEAD
             builder.RegisterType<SgnirtsSdrawkcabBehavior>().AsSelf();
-=======
             builder.RegisterType<MeepMeep>().AsSelf();
->>>>>>> d523dcb09c7053987c63989b09d491e7f024a689
             builder.RegisterType<DefaultTransmitBehavior>().As<ITransmitBehavior>();
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();
