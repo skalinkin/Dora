@@ -69,6 +69,7 @@
     <Compile Include="StrategyPatternDemo\ITransmitReceiver.cs" />
     <Compile Include="StrategyPatternDemo\Radio.cs" />
     <Compile Include="StrategyPatternDemo\IrmoRadio.cs" />
+    <Compile Include="StrategyPatternDemo\SgnirtsSdrawkcabBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StrategyPatternDemo\StrategyPatternDemo.cd" />
