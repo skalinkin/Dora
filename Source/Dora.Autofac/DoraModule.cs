@@ -17,11 +17,15 @@ namespace Avtec.DevMorningFix.Dora.Autofac
 
             builder.RegisterType<DotTransmitBehavior>().AsSelf();
             builder.RegisterType<RGBTransmitBehavior>().AsSelf();
+            builder.RegisterType<MeepMeep>().AsSelf();
             builder.RegisterType<DefaultTransmitBehavior>().As<ITransmitBehavior>();
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();
-            builder.RegisterType<PeaseRadio>().As<Radio>();
-
+            builder.RegisterType<PeaseRadio>().WithParameter(
+                new ResolvedParameter(
+                    (pi, ctx) => pi.ParameterType == typeof(ITransmitBehavior),
+                    (pi, ctx) => ctx.Resolve<MeepMeep>())).As<Radio>();
+            
             builder.RegisterType<IrmoRadio>().WithParameter(
                 new ResolvedParameter(
                     (pi, ctx) => pi.ParameterType == typeof(ITransmitBehavior),
