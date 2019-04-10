@@ -1,59 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.AnalogRadio" Collapsed="true">
-    <Position X="5" Y="4" Width="1.5" />
+    <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\AnalogRadio.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.ConventionalRadio" Collapsed="true">
-    <Position X="8.25" Y="4" Width="1.5" />
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.ConventionalRadio">
+    <Position X="8.75" Y="4.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\ConventionalRadio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.OruamKcinRadio" Collapsed="true">
-    <Position X="7.25" Y="5.5" Width="1.5" />
+    <Position X="7.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\OruamKcinRadio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.PeaseRadio" Collapsed="true">
-    <Position X="5" Y="5.5" Width="1.5" />
+    <Position X="5.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\PeaseRadio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.Radio" Collapsed="true">
-    <Position X="7.25" Y="2.75" Width="1.5" />
+    <Position X="7.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\Radio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.RussianRadio" Collapsed="true">
-    <Position X="5" Y="7" Width="1.5" />
+    <Position X="5.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\RussianRadio.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.SimplexRadio" Collapsed="true">
-    <Position X="9.5" Y="5.5" Width="1.5" />
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.BrokenLspRadio" Collapsed="true">
+    <Position X="7.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StrategyPatternDemo\SimplexRadio.cs</FileName>
+      <FileName>StrategyPatternDemo\BrokenLspRadio.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.DefaultTransmitBehavior" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>StrategyPatternDemo\DefaultTransmitBehavior.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.DotTransmitBehavior" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>StrategyPatternDemo\DotTransmitBehavior.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.IrmoRadio" Collapsed="true">
+    <Position X="10" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StrategyPatternDemo\IrmoRadio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.MoscowRadio" Collapsed="true">
+    <Position X="5.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StrategyPatternDemo\MoscowRadio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.RGBTransmitBehavior" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>StrategyPatternDemo\RGBTransmitBehavior.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
   <Interface Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.ITransmitReceiver" Collapsed="true">
-    <Position X="12" Y="2.75" Width="1.5" />
+    <Position X="14.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyPatternDemo\ITransmitReceiver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Avtec.DevMorningFix.Dora.StrategyPatternDemo.ITransmitBehavior" Collapsed="true">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>StrategyPatternDemo\ITransmitBehavior.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
