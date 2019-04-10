@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.Composition;
-using System.Reflection;
-using Autofac;
+﻿using Autofac;
 using Autofac.Core;
 using Avtec.DevMorningFix.Dora.StrategyPatternDemo;
+using System.ComponentModel.Composition;
+using System.Reflection;
 using Module = Autofac.Module;
 
 namespace Avtec.DevMorningFix.Dora.Autofac
@@ -17,6 +17,7 @@ namespace Avtec.DevMorningFix.Dora.Autofac
 
             builder.RegisterType<DotTransmitBehavior>().AsSelf();
             builder.RegisterType<RGBTransmitBehavior>().AsSelf();
+            builder.RegisterType<MorseCodeTransmitBehavior>().AsSelf();
             builder.RegisterType<DefaultTransmitBehavior>().As<ITransmitBehavior>();
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();
@@ -28,7 +29,10 @@ namespace Avtec.DevMorningFix.Dora.Autofac
                     (pi, ctx) => ctx.Resolve<RGBTransmitBehavior>())).As<Radio>();
 
             builder.RegisterType<OruamKcinRadio>().As<Radio>();
-            builder.RegisterType<RussianRadio>().As<Radio>();
+            builder.RegisterType<RussianRadio>().WithParameter(
+                new ResolvedParameter(
+                    (pi, ctx) => pi.ParameterType == typeof(ITransmitBehavior),
+                    (pi, ctx) => ctx.Resolve<MorseCodeTransmitBehavior>())).As<Radio>();
             builder.RegisterType<BrokenLspRadio>().As<Radio>();
             builder.RegisterType<MoscowRadio>().WithParameter(
                 new ResolvedParameter(
