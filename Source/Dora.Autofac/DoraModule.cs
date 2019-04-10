@@ -37,7 +37,10 @@ namespace Avtec.DevMorningFix.Dora.Autofac
                     (pi, ctx) => pi.ParameterType == typeof(ITransmitBehavior),
                     (pi, ctx) => ctx.Resolve<SgnirtsSdrawkcabBehavior>())).As<Radio>();
 
-            builder.RegisterType<RussianRadio>().As<Radio>();
+            builder.RegisterType<RussianRadio>().WithParameter(
+                new ResolvedParameter(
+                    (pi, ctx) => pi.ParameterType == typeof(ITransmitBehavior),
+                    (pi, ctx) => ctx.Resolve<RGBTransmitBehavior>())).As<Radio>();
             builder.RegisterType<BrokenLspRadio>().As<Radio>();
             builder.RegisterType<MoscowRadio>().WithParameter(
                 new ResolvedParameter(
