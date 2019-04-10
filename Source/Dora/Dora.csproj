@@ -60,6 +60,7 @@
     <Compile Include="StrategyPatternDemo\DefaultTransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\DotTransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\ITransmitBehavior.cs" />
+    <Compile Include="StrategyPatternDemo\MeepMeep.cs" />
     <Compile Include="StrategyPatternDemo\MorseCodeTransmitBehavior.cs" />
     <Compile Include="StrategyPatternDemo\MoscowRadio.cs" />
     <Compile Include="StrategyPatternDemo\OruamKcinRadio.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="StrategyPatternDemo\ITransmitReceiver.cs" />
     <Compile Include="StrategyPatternDemo\Radio.cs" />
     <Compile Include="StrategyPatternDemo\IrmoRadio.cs" />
+    <Compile Include="StrategyPatternDemo\SgnirtsSdrawkcabBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StrategyPatternDemo\StrategyPatternDemo.cd" />
