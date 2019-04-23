@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
+﻿namespace Avtec.DevMorningFix.Dora
 {
     internal class MorseCodeTransmitBehavior : ITransmitBehavior
     {

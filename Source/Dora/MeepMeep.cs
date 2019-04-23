@@ -1,8 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Media;
 
-namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
+namespace Avtec.DevMorningFix.Dora
 {
     internal class MeepMeep : ITransmitBehavior
     {

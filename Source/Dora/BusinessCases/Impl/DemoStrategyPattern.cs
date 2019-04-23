@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Avtec.DevMorningFix.Dora.StrategyPatternDemo;
 
 namespace Avtec.DevMorningFix.Dora.BusinessCases.Impl
 {

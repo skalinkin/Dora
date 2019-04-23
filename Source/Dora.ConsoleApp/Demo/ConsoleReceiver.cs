@@ -1,5 +1,4 @@
 ﻿using System;
-using Avtec.DevMorningFix.Dora.StrategyPatternDemo;
 
 namespace Avtec.DevMorningFix.Dora.ConsoleApp.Demo
 {

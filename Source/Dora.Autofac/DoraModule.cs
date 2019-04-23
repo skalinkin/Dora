@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Autofac.Core;
-using Avtec.DevMorningFix.Dora.StrategyPatternDemo;
 using System.ComponentModel.Composition;
 using System.Reflection;
 using Module = Autofac.Module;

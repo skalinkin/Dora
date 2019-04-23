@@ -1,4 +1,4 @@
-﻿namespace Avtec.DevMorningFix.Dora.StrategyPatternDemo
+﻿namespace Avtec.DevMorningFix.Dora
 {
     public class Radio
     {
