@@ -2,7 +2,7 @@
 
 namespace Avtec.DevMorningFix.Dora.BusinessCases.Impl
 {
-    internal class DemoStrategyPattern : IDemoStrategyPattern
+    public class DemoStrategyPattern : IDemoPattern
     {
         private readonly ITransmitReceiver _output;
         private readonly IEnumerable<Radio> _radios;

@@ -2,6 +2,7 @@
 using Autofac.Core;
 using System.ComponentModel.Composition;
 using System.Reflection;
+using Avtec.DevMorningFix.Dora.BusinessCases.Impl;
 using Module = Autofac.Module;
 
 namespace Avtec.DevMorningFix.Dora.Autofac
@@ -19,6 +20,9 @@ namespace Avtec.DevMorningFix.Dora.Autofac
             builder.RegisterType<SgnirtsSdrawkcabBehavior>().AsSelf();
             builder.RegisterType<MeepMeep>().AsSelf();
             builder.RegisterType<MorseCodeTransmitBehavior>().AsSelf();
+            builder.RegisterType<DemoStrategyPattern>().AsSelf();
+            builder.RegisterType<DemoObserverPattern>().AsSelf();
+            builder.RegisterType<RadioMonitor>().As<IMonitoringObserver>();
             builder.RegisterType<DefaultTransmitBehavior>().As<ITransmitBehavior>();
             builder.RegisterType<AnalogRadio>().As<Radio>();
             builder.RegisterType<ConventionalRadio>().As<Radio>();

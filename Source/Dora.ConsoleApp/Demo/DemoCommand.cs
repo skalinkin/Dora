@@ -1,32 +1,25 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using Avtec.DevMorningFix.Dora.BusinessCases;
+using System.Linq;
 
 namespace Avtec.DevMorningFix.Dora.ConsoleApp.Demo
 {
     internal class DemoCommand : ICommand
     {
-        private readonly Func<IDemoStrategyPattern> _strategyDemoFactory;
+        private readonly IEnumerable<DemoPatternHandler> _handlers;
 
-        public DemoCommand(Func<IDemoStrategyPattern> strategyDemoFactory)
+        public DemoCommand(IEnumerable<DemoPatternHandler> handlers)
         {
-            _strategyDemoFactory = strategyDemoFactory;
+            _handlers = handlers;
         }
 
         public void Execute(object option)
         {
             var demoOption = (DemoOption) option;
             Debug.Print(demoOption.Pattern.ToString());
-            if (demoOption.Pattern == Demos.Strategy)
-            {
-                StrategyDemo();
-            }
-        }
 
-        private void StrategyDemo()
-        {
-            var businessCase = _strategyDemoFactory.Invoke();
-            businessCase.Execute();
+            var handler = _handlers.Single(h => h.Pattern == demoOption.Pattern);
+            handler.HandleRequest();
         }
     }
 }

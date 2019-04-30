@@ -54,9 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleAppModule.cs" />
+    <Compile Include="Demo\ConsoleMonitorOutput.cs" />
     <Compile Include="Demo\ConsoleReceiver.cs" />
-    <Compile Include="Demo\Demos.cs" />
+    <Compile Include="Demo\DemoPatternHandler.cs" />
     <Compile Include="Demo\DemoCommand.cs" />
+    <Compile Include="Demo\ObserverDemoPatternHandler.cs" />
+    <Compile Include="Demo\StrategyDemoPatternHandler.cs" />
     <Compile Include="DoraArgumentsProcessor.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="IOption.cs" />

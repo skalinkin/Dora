@@ -1,7 +1,8 @@
 ﻿namespace Avtec.DevMorningFix.Dora.BusinessCases
 {
-    public interface IDemoStrategyPattern
+    public enum Demos
     {
-        void Execute();
+        Strategy,
+        Observer
     }
 }

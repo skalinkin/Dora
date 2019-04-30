@@ -42,11 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessCases\Impl\DemoObserverPattern.cs" />
+    <Compile Include="BusinessCases\IDemoPattern.cs" />
+    <Compile Include="BusinessCases\Demos.cs" />
     <Compile Include="BusinessCases\Impl\DemoStrategyPattern.cs" />
-    <Compile Include="BusinessCases\IDemoStrategyPattern.cs" />
     <Compile Include="BusinessCases\IFundamentalReceiver.cs" />
+    <Compile Include="IMonitorOutput.cs" />
+    <Compile Include="RadioMonitor.cs" />
     <Compile Include="DefaultFundamentalFormatter.cs" />
     <Compile Include="IFundamentalFormatter.cs" />
+    <Compile Include="IMonitoringObserver.cs" />
+    <Compile Include="IMonitoringSubject.cs" />
     <Compile Include="IShowTheListOfFundamentals.cs" />
     <Compile Include="BusinessCases\Impl\ShowTheListOfFundamentals.cs" />
     <Compile Include="Fundamentals\LooseCoupling.cs" />
